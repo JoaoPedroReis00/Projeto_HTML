@@ -1,0 +1,813 @@
+body{
+    margin-left: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+header{
+    margin-top: -10px;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    border-bottom: red 2px solid;
+    background-image: url(../Projeto\ Final/imagens/bg\ test3.jpg);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+table{
+
+    text-align: center;
+    margin-left: 5%;
+    width: 90%;
+    border-color: darkred;
+    font-size: 17px;
+}
+
+thead{
+
+    background-color: rgb(236, 236, 236);
+}
+
+nav{
+    position: fixed;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-top: 72px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(25, 25, 25);
+}
+
+audio{
+
+    position: fixed;
+    bottom: 10px;
+    margin-left: 5%;
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#pAudio{
+
+    position: fixed;
+    bottom: 30px;
+    font-size: 12px;
+    margin-left: 5%;
+    left: 40px;
+    color: black;
+}
+
+#divMsg{
+
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -30px;
+    font-size: 15px;
+}
+
+.divBtnHeader{
+
+    margin-top: -25px;
+    margin-left: 100%;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    height: 48px;
+    width: 150px;
+    
+    transition: box-shadow 0.2s;
+}
+.divBtnHeader:hover,.divBtnHeader:focus{
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#divLogin{
+
+    left: -150px;
+}
+
+#divCadastrarUsuario{
+
+    left: -300px;
+}
+
+#divConta{
+
+    left: -300px;
+}
+
+#divAdm{
+
+    left: -150px;
+}
+
+.pBtnHeader{
+
+    margin-top: 10px;
+}
+
+.divIHeader{
+
+    position: fixed;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 100%;
+    left: -300px;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#divIConta{
+
+    height: 150px;
+}
+
+#divIAdm{
+
+    height: 150px;
+}
+
+#divTransparente{
+
+    position: fixed;
+    height: 500px;
+    margin-top: 45px;
+    margin-left: auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+.popUp{
+
+    position: fixed;
+    margin-left: 25%;
+    top: 150px;
+    height: 200px;
+    width: 50%;
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0px 0px 0px 10000000px rgba(0, 0, 0, 0.685);
+}
+#inputLoc{
+
+    width: 90%;
+    margin-left: 5%;
+    height: 25px;
+    font-size: 20px;
+}
+.divBtnMsgConfirm{
+
+    position: absolute;
+    margin-top: 50px;
+    width: 50%;
+    height: 50px;
+
+    transition: box-shadow 0.2s;
+}
+.divBtnMsgConfirm:hover , .divBtnMsgConfirm:focus{
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.btnMsgConfirm{
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: 25px;
+    border-color: transparent;
+}
+
+#btnSim{
+
+    margin-left: auto;
+}
+
+#btnNao{
+
+    margin-left: 50%;
+}
+
+.divBtnIHeader{
+
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+    transition: box-shadow 0.2s;
+}
+.divBtnIHeader:hover , .divBtnIHeader:focus{
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.btnHeader{
+
+    border-color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#pesquisar{
+
+    margin-top: 25px;
+    margin-left: 50%;
+    position: absolute;
+    height: 23px;
+    width: 50%;
+}
+
+#imgLupa{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 30px;
+    margin-left: 100%;
+    left: -25px;
+}
+
+#h1Principal{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+.h2Form{
+
+    margin-left: 5%;
+    font-size: 40px;
+}
+
+.h3Form{
+
+    margin-left: 5%;
+    font-size: 35px;
+}
+
+#divForm{
+
+    border-radius: 5px;
+    margin-top: 155px;
+    margin-left: 5%;
+    width: 90%;
+    box-shadow: 0px 5px 35px 0px black;
+    position: absolute;
+    background-color: white;
+    color: black;
+}
+
+.divFormInterna{
+
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 90%;
+    height: 75px;
+}
+
+.divForm2{
+
+    width: 45%;
+    margin-left: 3%;
+} 
+
+#divMusica{
+
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    box-shadow: 0px 0px 10px 0px black;
+    height: auto;
+    border-radius: 5px;
+}  
+
+#btnCadastrarMusica{
+
+    background-color: lightgreen;
+}
+
+#btnEditarMusica{
+
+    background-color: lightblue;
+}
+
+#btnExcluirMusica{
+
+    background-color: lightsalmon;
+}
+
+#divTxtArea{
+
+    position: absolute;
+    width: 45%;
+    margin-left: 50%;
+}
+
+.labelForm{
+
+    position: absolute;
+    font-size: 30px;
+}
+
+.inputForm{
+
+    margin-top: 40px;
+    background-color: transparent;
+    width: 100%;
+    border: transparent 1px solid;
+    height: 30px;
+    font-size: 25px;
+    border-top-color: red;
+    border-bottom-color: red;
+}
+
+.inputFile{
+
+    margin-top: 40px;
+    background-color: transparent;
+    width: 100%;
+    border: transparent 1px solid;
+    height: 35px;
+    font-size: 25px;
+    border-top-color: red;
+    border-bottom-color: red;
+}
+
+#divTexto{
+
+    height: auto;
+}
+
+#iTexto{
+
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.btnInterno{
+
+    position: absolute;
+    width: 30%;
+    height: 40px;
+    font-size: 30px;
+
+    transition: box-shadow 0.2s;
+}
+.btnInterno:hover , .btnInterno:focus{
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#btnAdicionarMsc{
+
+    background-color: lightgreen;
+}
+
+#btnExcluirMsc{
+
+    background-color: lightsalmon;
+    margin-left: 30%;
+}
+
+#btnEditarMsc{
+
+    background-color: lightblue;
+    margin-left: 60%;
+}
+
+#btnMusica{
+
+    margin-top: 20px;
+    height: 66px;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 35px;
+    border-radius: 5px;
+}
+
+.btnForm{
+
+    margin-top: 50px;
+    height: 80px;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 45px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    transition: box-shadow 0.2s;
+
+}
+.btnForm:hover , .btnForm:focus{
+
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.divBtn{
+
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+}
+
+.btnForm2{
+
+    position: absolute;
+    height: 80px;
+    width: 40%;
+    font-size: 45px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    transition: box-shadow 0.2s;
+}
+.btnForm2:hover , .btnForm2:focus{
+
+    box-shadow: 0px 0px 10px 0px;
+}
+
+#btnCadastrar{
+
+    margin-left: 5%;
+}
+
+#btnLocalizar{
+
+    margin-left: 55%;
+}
+
+#btnEditar{
+
+    margin-left: 5%;
+    background-color: lightblue;
+}
+
+#btnExcluir{
+
+    margin-left: 55%;
+    background-color: lightcoral;
+}
+
+.divNavPrincipal{
+    position: absolute;
+    margin-top: 5px;
+    height: 53px;
+    width: 33%;
+    font-size: 20px;
+    border: 1px solid rgb(25, 25, 25);
+
+    transition: box-shadow 0.2s;
+}
+.divNavPrincipal:hover,.divNavPrincipal:focus{
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+#navDiv2{
+
+    margin-left: 33%;
+}
+#navDiv3{
+    margin-left: 66%;
+}
+#mainPrincipal{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 140px;
+    height: auto;
+    width: 100%;
+}
+.divMainPrincipal{
+    position: absolute;
+    border: 1px red solid;
+    height: 200px;
+    width: 30%;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.imgEstilosMusicais{
+
+    position: absolute;
+    height: 350px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: black 1px solid;
+
+    transition: all 0.5s;
+}
+.imgEstilosMusicais:hover , .imgEstilosMusicais:focus{
+
+    margin-top: 10px;
+}
+.divEstilosMusicais{
+
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 340px;
+    margin-left: 50px;
+    border: black 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px inset black;
+}
+
+#imgEM2{
+
+    margin-left: 300px;
+}
+#divEM2{
+
+    margin-left: 300px;
+}
+
+#imgEM3{
+
+    margin-left: 550px;
+}
+#divEM3{
+
+    margin-left: 550px;
+}
+
+#imgEM4{
+
+    margin-left: 800px;
+}
+#divEM4{
+
+    margin-left: 800px;
+}
+
+#imgEM5{
+
+    margin-left: 1050px;
+}
+#divEM5{
+
+    margin-left: 1050px;
+}
+
+#imgEM6{
+
+    margin-left: 1300px;
+}
+#divEM6{
+
+    margin-left: 1300px;
+}
+
+#imgEM7{
+
+    margin-left: 1550px;
+}
+#divEM7{
+
+    margin-left: 1550px;
+}
+
+#imgEM8{
+
+    margin-left: 1800px;
+}
+#divEM8{
+
+    margin-left: 1800px;
+}
+
+#imgEM9{
+
+    margin-left: 2050px;
+}
+#divEM9{
+
+    margin-left: 2050px;
+}
+
+.pErro{
+
+    position: absolute;
+    margin-top: auto;
+    font-size: 12px;
+    color: red;
+}
+
+.h2Principal{
+
+    position: relative;
+    margin-top: auto;
+}
+
+.h3Principal{
+
+    margin-top: 10px;
+}
+
+.divEMArtista{
+
+    position: relative;
+    width: 100%;
+    height: 130px;
+
+    transition: all 0.5s;
+
+}.divEMArtista:hover , .divEMArtista:focus{
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.h2EMArtista{
+
+    position: absolute;
+    margin-top: 25px;
+    font-size: 50px;
+    margin-left: 150px;
+}
+
+.imgEMArtista{
+
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 90px;
+    width: 90px;
+    height: 90px;
+    border: 1px inset black;
+    box-shadow: 0px 0px 15px 5px black;
+}
+
+#divAlbum{
+
+    position: relative;
+    margin-top: -8px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    box-shadow: 0px 10px 10px 5px black;
+}
+
+.divH2{
+
+    text-align: center;
+    border-bottom: white solid 1px;
+}
+
+.h2Interna{
+
+    font-size: 35px;
+}
+
+#h3Album{
+
+    font-size: 30px;
+}
+
+#imgAlbum{
+
+    margin-top: -30px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#pAlbum{
+
+    margin-top: auto;
+    height: 15px;
+}
+
+.btnAlbum{
+
+    margin-top: -30px;
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+
+    transition: all 0.2s;
+}
+.btnAlbum:hover , .btnAlbum:focus{
+
+    box-shadow: 0px 0px 10px 5px inset black;
+}
+
+#btnAnterior{
+
+    margin-left: -150px;
+}
+
+#divSingles{
+
+    position: relative;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.divSingleInterno{
+
+    position: relative;
+    height: 80px;
+    width: 100%;
+
+    transition: all 0.2s;
+}
+.divSingleInterno:hover , .divSingleInterno:focus{
+
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.h3Single{
+
+    position: absolute;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.pSingle{
+
+    position: absolute;
+    font-size: 15px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.btnFavorito{
+
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 100%;
+    left: -260px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+.btnFavorito:hover , .btnFavorito:focus{
+
+    background-color: red;
+}
+
+.divMusicas{
+
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.pMusica{
+
+    position: absolute;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#divPesquisa{
+
+    margin-top: 140px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.divPesquisaInterna{
+
+    position: relative;
+    width: 100%;
+    height: auto;
+}
