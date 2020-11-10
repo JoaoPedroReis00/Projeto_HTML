@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Início</title>
+        <link rel="stylesheet" type="text/css" href="css principal.css">
+        <script type="text/javascript" src="javascript principal.js"></script>
+    </head>
+
+    <body onload="carregarIndex()" link="white" alink="red" vlink="white">
+
+
+        <main id="mainPrincipal">
+
+            <div class="divEstilosMusicais"><h3>Rap</h3></div>
+            <img class="imgEstilosMusicais" src="../Projeto Final/imagens/rap wpp.png" onclick="abrirEM('rap')">
+
+            <div class="divEstilosMusicais" id="divEM2"><h3>Rock</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM2" src="../Projeto Final/imagens/rock wpp.png" onclick="abrirEM('rock')">
+
+            <div class="divEstilosMusicais" id="divEM3"><h3>Pop</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM3" src="../Projeto Final/imagens/pop music wpp.png" onclick="abrirEM('pop')">
+
+            <div class="divEstilosMusicais" id="divEM4"><h3>Eletrônica</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM4" src="../Projeto Final/imagens/eletronica wpp.png" onclick="abrirEM('eletrônica')">
+
+            <div class="divEstilosMusicais" id="divEM5"><h3>Indie</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM5" src="../Projeto Final/imagens/indie wpp.png" onclick="abrirEM('indie')">
+
+            <div class="divEstilosMusicais" id="divEM6"><h3>Funk</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM6" src="../Projeto Final/imagens/funk wpp.png" onclick="abrirEM('funk')">
+
+            <div class="divEstilosMusicais" id="divEM7"><h3>MPB</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM7" src="../Projeto Final/imagens/mpb wpp.png" onclick="abrirEM('mpb')">
+
+            <div class="divEstilosMusicais" id="divEM8"><h3>Blues</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM8" src="../Projeto Final/imagens/blues wpp.png" onclick="abrirEM('blues')">
+
+            <div class="divEstilosMusicais" id="divEM9"><h3>Música Clássica</h3></div>
+            <img class="imgEstilosMusicais" id="imgEM9" src="../Projeto Final/imagens/classica wpp.png" onclick="abrirEM('clássica')">
+        </main>
+
+        <div id="divPesquisa" hidden>
+
+            <div class="divPesquisaInterna" id="divArtistas" hidden>
+                <div class="divH2">
+                    <h2 class="h2Interna">Artistas/Bandas:</h2>
+                </div>
+            </div>
+
+            <div class="divPesquisaInterna" id="divAlbuns" hidden>
+                <div class="divH2">
+                    <h2 class="h2Interna">Álbuns:</h2>
+                </div>
+            </div>
+
+            <div class="divPesquisaInterna" id="divMusicas" hidden>
+                <div class="divH2">
+                    <h2 class="h2Interna">Musicas:</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+        <audio id="audio" controls autoplay hidden></audio>
+        <p id="pAudio"></p>
+
+        <header>
+            <br>
+            <h1 id="h1Principal">Início</h1>
+
+            <input type="text" id="pesquisar" onkeypress="pesquisar()">
+            <img src="../Projeto Final/imagens/lupa2.png" id="imgLupa">
+
+            <div id="divMsg">
+                <p id="pMsg"></p>
+            </div>
+
+            <a href="admUsuario.html">
+                <div class="divBtnHeader" id="divCadastrarUsuario" hidden>
+                    <p class="pBtnHeader">Cadastrar</p>
+                </div>
+            </a>
+
+            <a href="login.html">
+                <div class="divBtnHeader" id="divLogin" hidden>
+                    <p class="pBtnHeader">Login</p>
+                </div>
+            </a>
+
+            <div class="divBtnHeader" id="divConta" hidden>
+                <button class="btnHeader" onmouseover="abrirDivConta()">Conta</button>
+            </div>
+
+            <div class="divBtnHeader" id="divAdm" hidden>
+                <button class="btnHeader" onmouseover="abrirDivAdm()">Adm</button>
+            </div>
+        </header>
+
+        <nav>
+            <a href="telaFavoritos.html">
+                <div class="divNavPrincipal">
+                    <h3 class="h3Principal">Favoritos</h3>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="divNavPrincipal" id="navDiv2">
+                    <h3 class="h3Principal">Início</h3>
+                </div>
+            </a>
+            <a href="telaMaisOuvidas.html">
+                <div class="divNavPrincipal" id="navDiv3">
+                    <h3 class="h3Principal">Mais Ouvidas</h3>
+                </div>
+            </a>
+        </nav>
+
+        <div id="divTransparente" onmouseover="fecharDiv()" hidden></div>
+
+        <div class="divIHeader" id="divIConta" hidden>
+
+            <a href="admUsuario.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iEditarUsuario">Editar Conta</button>
+                </div>
+            </a>
+
+            <div class="divBtnIHeader" onclick="sairConta()">
+                <button class="btnHeader" id="iSairUsuario">Sair da Conta</button>
+            </div>
+
+            <div class="divBtnIHeader" onclick="msgConfirm()">
+                <button class="btnHeader" id="iExcluirUsuario">Excluir Conta</button>
+            </div>
+
+        </div>
+        <div class="divIHeader" id="divIAdm" hidden>
+
+            <a href="admArtista.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iArtista">Artistas/Bandas</button>
+                </div>
+            </a>
+
+            <a href="admAlbum.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iAlbum">Álbuns</button>
+                </div>
+            </a>
+
+            <a href="admSingle.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iSingle">Singles</button>
+                </div>
+            </a>
+        </div>
+        
+        <div class="popUp" id="divMsgConfirm" hidden>
+            <p>Tem certeza que deseja excluir esta conta?</p>
+            <div id="btnSim" class="divBtnMsgConfirm" onclick="apagarUsuario()">
+                <button class="btnMsgConfirm">Sim</button>
+            </div>
+            <div id="btnNao" class="divBtnMsgConfirm" onclick="msgConfirm()">
+                <button class="btnMsgConfirm">Não</button>
+            </div>
+        </div>
+    </body>
+</html>

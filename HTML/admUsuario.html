@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Usuário</title>
+        <link rel="stylesheet" type="text/css" href="css principal.css">
+        <script type="text/javascript" src="javascript principal.js"></script>
+    </head>
+
+    <body onload="verificarUsuario()" link="white" alink="red" vlink="white">
+        
+        <div id="divForm">
+            
+        <form>
+
+            <div class="divFormInterna">
+                <label class="labelForm">Nome:</label>
+                <input class="inputForm" type="text" id="iNome" onblur="validNome(0)" onfocus="limparP('pNome')">
+                <p id="pNome" class="pErro"></p>
+            </div>
+
+            <div class="divFormInterna">
+                <label class="labelForm">Email:</label>
+                <input class="inputForm" type="email" id="iEmail" onblur="validEmail(0)" onfocus="limparP('pEmail')">
+                <p id="pEmail" class="pErro"></p>
+            </div>
+
+            <div class="divFormInterna">
+                <label class="labelForm">Senha:</label>
+                <input class="inputForm" type="password" id="iSenha" onblur="validSenha(0)" onfocus="limparP('pSenha')">
+                <p id="pSenha" class="pErro"></p>
+            </div>
+
+            <div class="divFormInterna">
+                <label class="labelForm">Data de Nascimento:</label>
+                <input class="inputForm" type="date" id="iDtNascimento" onblur="validNascimento(0)" onfocus="limparP('pDtNascimento')">
+                <p id="pDtNascimento" class="pErro"></p>
+            </div>
+
+            <div class="divFormInterna">
+                <label class="labelForm">Gênero:</label>
+                <select class="inputForm" id="iGenero" onblur="validGenero(0)" onfocus="limparP('pGenero')">
+                    <option value=""></option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Feminino</option>
+                    <option value="nb">Não Binário</option>
+                </select>
+                <p id="pGenero" class="pErro"></p>
+            </div>
+            <input type="button" class="btnForm" id="btnCadastrarUsuario" onclick="cadastrarUsuario()" value="Cadastrar" hidden>
+            <input type="button" class="btnForm" id="btnEditarUsuario" onclick="editarUsuario()" value="Editar" hidden>
+            <br>
+            <br>
+        </form>
+        </div>
+
+        <header>
+            <br>
+            <h1 id="h1Principal">Gerenciar Usuário</h1>
+
+            <div id="divMsg">
+                <p id="pMsg"></p>
+            </div>
+
+            <a href="admUsuario.html">
+                <div class="divBtnHeader" id="divCadastrarUsuario" hidden>
+                    <p class="pBtnHeader">Cadastrar</p>
+                </div>
+            </a>
+
+            <a href="login.html">
+                <div class="divBtnHeader" id="divLogin" hidden>
+                    <p class="pBtnHeader">Login</p>
+                </div>
+            </a>
+
+            <div class="divBtnHeader" id="divConta" hidden>
+                <button class="btnHeader" onmouseover="abrirDivConta()">Conta</button>
+            </div>
+
+            <div class="divBtnHeader" id="divAdm" hidden>
+                <button class="btnHeader" onmouseover="abrirDivAdm()">Adm</button>
+            </div>
+        </header>
+
+        <nav>
+            <a href="telaFavoritos.html">
+                <div class="divNavPrincipal">
+                    <h3 class="h3Principal">Favoritos</h3>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="divNavPrincipal" id="navDiv2">
+                    <h3 class="h3Principal">Início</h3>
+                </div>
+            </a>
+            <a href="telaMaisOuvidas.html">
+                <div class="divNavPrincipal" id="navDiv3">
+                    <h3 class="h3Principal">Mais Ouvidas</h3>
+                </div>
+            </a>
+        </nav>
+
+        <div id="divTransparente" onmouseover="fecharDiv()" hidden></div>
+
+        <div class="divIHeader" id="divIConta" hidden>
+
+            <a href="admUsuario.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iEditarUsuario">Editar Conta</button>
+                </div>
+            </a>
+
+            <div class="divBtnIHeader" onclick="sairConta()">
+                <button class="btnHeader" id="iSairUsuario">Sair da Conta</button>
+            </div>
+
+            <div class="divBtnIHeader" onclick="msgConfirm()">
+                <button class="btnHeader" id="iExcluirUsuario">Excluir Conta</button>
+            </div>
+
+        </div>
+        <div class="divIHeader" id="divIAdm" hidden>
+
+            <a href="admArtista.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iArtista">Artistas/Bandas</button>
+                </div>
+            </a>
+
+            <a href="admAlbum.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iAlbum">Álbuns</button>
+                </div>
+            </a>
+
+            <a href="admSingle.html">
+                <div class="divBtnIHeader">
+                    <button class="btnHeader" id="iSingle">Singles</button>
+                </div>
+            </a>
+        </div>
+        
+        <div class="popUp" id="divMsgConfirm" hidden>
+            <p>Tem certeza que deseja excluir esta conta?</p>
+            <div id="btnSim" class="divBtnMsgConfirm" onclick="apagarUsuario()">
+                <button class="btnMsgConfirm">Sim</button>
+            </div>
+            <div id="btnNao" class="divBtnMsgConfirm" onclick="msgConfirm()">
+                <button class="btnMsgConfirm">Não</button>
+            </div>
+        </div>
+    </body>
+</html>
